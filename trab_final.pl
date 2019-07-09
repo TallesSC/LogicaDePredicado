@@ -264,7 +264,7 @@ brasfoot(Time_X, Time_Y, Gols_X, Gols_Y, GolsMAX) :-
         List
     ),
     random_member(Goleador, List),
-    write("gol de "), write(Goleador), write(" --- "), writeln(Time),
+    write(Time),  write(" --- gol de "), writeln(Goleador), 
     Gols_X2 is Gols_X + 1,
     Gols_Y2 is Gols_Y + 1,
     (isEqual(Time, Time_X) ->  brasfoot(Time_X, Time_Y, Gols_X2, Gols_Y, GolsRestantes);
